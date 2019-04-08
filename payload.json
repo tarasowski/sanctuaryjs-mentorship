@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "eu-central-1",
+            "eventTime": "2019-04-08T15:18:44.878Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "AWS:AROAI7G7G5WFCCTPESM6U:Dimitri"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "95.91.211.128"
+            },
+            "responseElements": {
+                "x-amz-request-id": "47659B295707FE69",
+                "x-amz-id-2": "YF5Ypv3k8s1bb6UuFMgZwjzpvtsmroe7UwUDXpUjfE3z5P/u5jnk1VvGzhXfwfYTk+pzHBaJxgo="
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "07d706fd-f64b-429e-bca7-2bcdbe7381a7",
+                "bucket": {
+                    "name": "fdh-agrando-import-bucket-dev",
+                    "ownerIdentity": {
+                        "principalId": "A3FJ18FD41OQSX"
+                    },
+                    "arn": "arn:aws:s3:::fdh-agrando-import-bucket-dev"
+                },
+                "object": {
+                    "key": "import/dlg-example.csv",
+                    "size": 341,
+                    "eTag": "b9778ed65b2d0070dc9c7f1ddd4a02b2",
+                    "sequencer": "005CAB6654CDE51064"
+                }
+            }
+        }
+    ]
+}
