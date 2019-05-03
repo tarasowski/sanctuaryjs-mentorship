@@ -189,7 +189,7 @@ const program = timestamp => S.pipe([
 ])
 
 //    main :: OI String
-const main = async event => {
-  return program (Date.now()) (event).fork(_ => "error",_ => "success")
+const main = (event, ctx, cb) =>
+  program (Date.now()) (event).fork(_ => cb("error"),_ => cb(null,"success"))
   
 module.exports = {main, program}
